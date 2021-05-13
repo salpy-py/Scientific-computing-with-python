@@ -215,9 +215,9 @@ def add_time(start, duration, wk_day=None):
         else:
             new_time = str(total_hrs) + ':' + str(f'{total_mins:02d}') + ' ' + day_session + answer_day
 
-    print(new_time)
+
     return new_time
 
-
-actual = add_time("8:16 PM", "466:02", "tuesday")
-expected = "6:18 AM, Monday (20 days later)"
+# here you can check it this way
+actual = add_time("8:04 AM", "24:00", "tuesday")
+print(actual)
